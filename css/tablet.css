@@ -1,0 +1,50 @@
+.navigation-bar .menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  grid-column: 3 / 8;
+  margin-top: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #EDCB54;
+  font-size: 1.5rem;
+}
+
+.navigation-bar .menu a {
+  color: var(--black);
+}
+
+.navigation-bar .mobile-menu {
+  display: none;
+}
+
+.navigation-bar .shopping-car {
+  position: relative;
+  grid-column: 8 / 9;
+  width: 20px;
+  height: 20px;
+}
+
+.navigation-bar .shopping-car span {
+  position: absolute;
+  background-image: url(../assets/icons/cart-shopping-solid.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90%;
+  width: 90%;
+}
+
+.main-container {
+  height: 80vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/img/background-m.jpg);
+  background-size: cover;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}

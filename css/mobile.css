@@ -1,0 +1,232 @@
+:root {
+  --yellow: #EDCB54;
+  --black: #181818;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: block;
+}
+
+header {
+  height: 10vh;
+}
+
+.navigation-bar {
+  position: relative;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  align-items: center;
+  background-color: var(--yellow);
+}
+
+.navigation-bar .logo-container {
+  position: absolute;
+  grid-column: 2 / 3;
+  width: 40px;
+  height: 40px;
+}
+
+.logo-container span {
+  position: absolute;
+  background-image: url(../assets/icons/lightning.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+
+.navigation-bar .menu {
+  display: none;
+}
+
+.navigation-bar .menu-toggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 50px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--black);
+  font-size: 1.5rem;
+}
+
+.navigation-bar .menu li {
+  list-style: none;
+}
+
+.navigation-bar .menu a {
+  text-decoration: none;
+  color: var(--yellow);
+  cursor: pointer;
+}
+
+.navigation-bar .mobile-menu {
+  position: absolute;
+  grid-column: 8 / 9;
+  width: 20px;
+  height: 20px;
+}
+
+.navigation-bar .mobile-menu span {
+  position: absolute;
+  background-image: url(../assets/icons/bars-solid.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90%;
+  width: 90%;
+}
+
+.main-container {
+  height: 80vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/img/background-s.jpg);
+  background-size: cover;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.info-container {
+  grid-column: 2 / 7;
+  grid-row: 2 / 4;
+  color: var(--yellow);
+}
+
+.info-container h1 {
+  font-size: 4rem;
+}
+
+.info-container p {
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #ffff;
+}
+
+.btn_read-more {
+  font-size: 1.5rem;
+  background: none;
+  padding: 10px 20px;
+  border: 1px solid var(--yellow);
+  border-radius: 30px;
+  margin-top: 15px;
+  cursor: pointer;
+  color: #ffff;
+}
+
+.btn_read-more:hover {
+  background-color: var(--yellow);
+  color: var(--black);
+}
+
+/* Footer */
+
+footer {
+  height: 10vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  align-items: center;
+  background-color: var(--yellow);
+}
+
+.listen-online {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  grid-column: 1 / 7;
+  color: var(--black);
+}
+
+
+.listen-online .headset {
+  position: absolute;
+  grid-column: 1 / 2;
+  width: 15px;
+  height: 15px;
+  justify-self: center;
+  background-image: url(../assets/icons/headphones.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.listen-online h2 {
+  grid-column: 2 / 3;
+  justify-self: center;
+}
+
+.follow {
+  display: none;
+}
+
+.social-media {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  grid-column: 7 / 11;
+}
+
+.social-media .facebook {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  grid-column: 1 / 2;
+  background-image: url(../assets/icons/facebook.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-self: center;
+  justify-self: center;
+}
+
+.social-media .instagram {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  grid-column: 2 / 3;
+  background-image: url(../assets/icons/instagram.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-self: center;
+  justify-self: center;
+}
+
+.social-media .twitter {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  grid-column: 3 / 4;
+  background-image: url(../assets/icons/twitter.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-self: center;
+  justify-self: center;
+}
